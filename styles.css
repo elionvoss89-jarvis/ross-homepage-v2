@@ -390,6 +390,156 @@ a { text-decoration: none; color: inherit; }
   font-size: 1.05rem;
   color: var(--text-light);
 }
+
+/* ─── PRESS COVER STORY ─── */
+.press-cover {
+  padding: 8rem 5rem;
+  background: var(--bg);
+}
+.press-cover-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.press-cover-head {
+  margin-bottom: 3rem;
+}
+.press-cover-headline {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text);
+}
+.press-cover-image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.press-cover-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 1.2s var(--transition);
+}
+.press-cover:hover .press-cover-image img {
+  transform: scale(1.03);
+}
+.press-cover-caption {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.press-cover-caption-meta {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  line-height: 2;
+}
+.press-cover-body {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--text-light);
+  max-width: 650px;
+}
+
+/* ─── PRESS INDEX (editorial list) ─── */
+.press-index-section {
+  padding: 8rem 5rem;
+  background: var(--bg-warm);
+}
+.press-index {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.press-index-head {
+  margin-bottom: 4rem;
+}
+.press-index-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text);
+}
+.press-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 180px;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.press-row:last-child {
+  border-bottom: none;
+}
+.press-row-year {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+.press-row-headline {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+.press-row-note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-light);
+  max-width: 550px;
+}
+.press-row-source {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: right;
+  padding-top: 0.15rem;
+}
+
+/* ─── IMAGE BREAK (full-bleed) ─── */
+.image-break {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+}
+.image-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.image-break-caption {
+  position: absolute;
+  left: 5rem; right: 5rem; bottom: 3rem;
+  background: none;
+}
+.image-break-caption .section-label {
+  color: var(--accent-gold);
+  margin-bottom: 0.75rem;
+}
+.image-break-quote {
+  font-family: var(--serif);
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.85);
+  max-width: 700px;
+}
+
 .project-card {
   position: relative;
   overflow: hidden;
@@ -425,6 +575,161 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.65);
+}
+
+/* ─── PRESS — EDITORIAL COVER ─── */
+.press-cover {
+  padding: 9rem 5rem;
+  background: var(--bg);
+}
+.press-cover-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.press-cover-head {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: baseline;
+  margin-bottom: 3.5rem;
+}
+.press-cover-head .section-label { margin-bottom: 0; }
+.press-cover-headline {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text);
+  max-width: 22ch;
+}
+.press-cover-image {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.press-cover-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 8s var(--transition);
+}
+.press-cover:hover .press-cover-image img { transform: scale(1.03); }
+.press-cover-caption {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.press-cover-caption-meta {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 2.2;
+}
+.press-cover-body {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--text-light);
+  max-width: 58ch;
+}
+
+/* ─── PRESS — EDITORIAL INDEX ─── */
+.press-index-section {
+  padding: 9rem 5rem;
+  background: var(--bg-warm);
+}
+.press-index {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.press-index-head {
+  margin-bottom: 4rem;
+  max-width: 720px;
+}
+.press-index-head .section-label { margin-bottom: 1rem; }
+.press-index-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text);
+}
+.press-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 200px;
+  gap: 3rem;
+  padding: 2.4rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  align-items: baseline;
+  transition: background 0.4s ease;
+}
+.press-row:last-child { border-bottom: 1px solid rgba(0,0,0,0.08); }
+.press-row:hover { background: rgba(0,0,0,0.02); }
+.press-row-year {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.press-row-headline {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.7vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.press-row-note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 1.75;
+  max-width: 54ch;
+}
+.press-row-source {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* ─── PRESS — FULL-BLEED IMAGE BREAK ─── */
+.image-break {
+  position: relative;
+  height: 78vh;
+  overflow: hidden;
+}
+.image-break img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.image-break::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.55) 100%);
+}
+.image-break-caption {
+  position: absolute;
+  bottom: 4rem; left: 5rem; right: 5rem;
+  z-index: 2;
+  max-width: 620px;
+}
+.image-break-caption .section-label { color: var(--accent-gold); margin-bottom: 1.25rem; }
+.image-break-quote {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--white);
 }
 
 /* ─── STATS BAR ─── */
@@ -818,6 +1123,14 @@ a { text-decoration: none; color: inherit; }
   .page-hero-content { padding: 3rem 2.5rem; }
   .awards-bar { padding: 3.5rem 2rem; }
   .awards-inner { gap: 2.5rem; }
+  .press-cover { padding: 6rem 3rem; }
+  .press-cover-head { grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
+  .press-cover-caption { grid-template-columns: 1fr; gap: 1.25rem; }
+  .press-index-section { padding: 6rem 3rem; }
+  .press-row { grid-template-columns: 90px 1fr; gap: 1.5rem 2rem; }
+  .press-row-source { grid-column: 2; text-align: left; margin-top: 0.25rem; }
+  .image-break { height: 62vh; }
+  .image-break-caption { left: 3rem; right: 3rem; bottom: 3rem; }
 }
 
 /* Hamburger kicks in at iPad Pro portrait (834/820/810) — prevents the
@@ -897,6 +1210,13 @@ a { text-decoration: none; color: inherit; }
   .footer-nav { gap: 0.9rem 1.5rem; }
   .contact-grid { gap: 2.5rem; }
   .contact-info-title { font-size: 1.6rem; }
+  .press-cover { padding: 5rem 1.5rem; }
+  .press-index-section { padding: 5rem 1.5rem; }
+  .press-row { grid-template-columns: 1fr; gap: 0.4rem; padding: 1.75rem 0; }
+  .press-row-source { grid-column: 1; text-align: left; margin-top: 0.4rem; }
+  .press-index-head { margin-bottom: 2.5rem; }
+  .image-break { height: 55vh; }
+  .image-break-caption { left: 1.5rem; right: 1.5rem; bottom: 2rem; }
 }
 
 /* Very small phones (iPhone SE, small Androids) */
