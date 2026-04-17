@@ -3,128 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News & Press | Ross Architecture & Design</title>
-  <meta name="description" content="A curated selection of news, press mentions and milestones reflecting the growth, recognition and public presence of Ross Architecture & Design.">
+  <title>News & Press — Ross Architecture & Design</title>
+  <meta name="description" content="Awards, publications and milestones reflecting how Ross has grown into a name associated with exclusive architecture and sculptural homes.">
+  <meta property="og:title" content="News & Press — Ross Architecture & Design">
+  <meta property="og:description" content="Awards, publications and milestones from Ross Architecture & Design.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/d6d69b_c2ef43cce2f348538c4ebdbe8eeab506~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,enc_avif,quality_auto/ross-press.jpg">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <header class="nav-wrapper">
-    <nav class="nav nav--light">
-      <a href="/en/" class="nav-logo">ROSS</a>
-      <div class="nav-links">
-        <a href="/en/exclusive-design.html">Exclusive Design</a>
-        <a href="/en/redesign.html">Re-Design</a>
-        <a href="/en/limited-edition.html">Limited Edition</a>
-        <a href="/en/international.html">International</a>
-        <a href="/en/press.html" class="active">News</a>
-        <a href="/en/about.html">About</a>
-        <a href="/en/contact.html">Contact</a>
-      </div>
-      <div class="nav-lang">
-        <a href="/press.html">SV</a> &nbsp;/&nbsp; <a href="/en/press.html" class="active">EN</a>
-      </div>
-      <button class="nav-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
 
-  <main>
-    <section class="page-hero page-hero--press">
-      <div class="page-hero-image">
-        <img src="https://static.wixstatic.com/media/3afe48_a9e318950bb34b2898f31dae41925c68f000.jpg" alt="Ross press and news" loading="eager" referrerpolicy="no-referrer">
-      </div>
-      <div class="page-hero-content">
-        <p class="eyebrow">News & Press</p>
-        <h1>A curated view of Ross in the public eye</h1>
-        <p class="hero-intro">This first selection gathers awards, publications and meaningful milestones that reflect how Ross has grown into a name associated with exclusive architecture, sculptural homes and international appeal.</p>
-      </div>
-    </section>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="/en/" class="nav-logo">ROSS</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/en/exclusive-design.html">Exclusive Design</a></li>
+      <li><a href="/en/redesign.html">Re-Design</a></li>
+      <li><a href="/en/limited-edition.html">Limited Edition</a></li>
+      <li><a href="/en/international.html">International</a></li>
+      <li><a href="/en/about.html">About Ross</a></li>
+      <li><a href="/en/press.html" class="active">News</a></li>
+      <li><a href="/en/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-lang">
+      <a href="/press.html">SV</a> &nbsp;/&nbsp; <a href="/en/press.html" class="active">EN</a>
+    </div>
+    <div class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-    <section class="section section--light press-feature">
-      <div class="section-header section-header--left">
-        <p class="eyebrow">Featured</p>
-        <h2>Ross as a recurring reference in high-end living</h2>
-      </div>
-      <div class="content-split">
-        <div class="content-split-image">
-          <img src="https://static.wixstatic.com/media/d6d69b_c2ef43cce2f348538c4ebdbe8eeab506~mv2.jpg" alt="Ross featured press" loading="lazy" referrerpolicy="no-referrer">
+  <!-- PAGE HERO -->
+  <section class="page-hero page-hero--full">
+    <div class="page-hero-bg">
+      <img src="https://static.wixstatic.com/media/d6d69b_c2ef43cce2f348538c4ebdbe8eeab506~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,enc_avif,quality_auto/ross-press.jpg"
+           alt="Ross Architecture & Design — News & Press" loading="eager">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content reveal">
+      <p class="page-hero-label">News & Press</p>
+      <h1 class="page-hero-title">A curated view of Ross<br>in the public eye</h1>
+      <p class="page-hero-sub">Awards, publications and milestones reflecting how Ross has grown into a name associated with exclusive architecture, sculptural homes and international appeal.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED SECTION -->
+  <section class="content-split">
+    <div class="content-split-image reveal">
+      <img src="https://static.wixstatic.com/media/3afe48_a9e318950bb34b2898f31dae41925c68f000.jpg/v1/fill/w_1200,h_1600,al_c,q_90,enc_avif,quality_auto/ross-featured.jpg"
+           alt="Ross in the media" loading="lazy">
+    </div>
+    <div class="content-split-body reveal reveal-delay-1">
+      <p class="section-label">Featured</p>
+      <h2 class="content-split-title">Ross as a recurring reference<br>in high-end living</h2>
+      <p class="content-split-text">
+        Ross has spent years building a position where architecture, lifestyle and recognisability meet. This first selection focuses on the material that most clearly strengthens the brand, rather than trying to present a complete archive all at once.
+      </p>
+      <p class="content-split-text">
+        The result is an editorial and credible press surface, where coverage, awards and notable projects reinforce the wider picture of Ross as a premium design house.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRESS HIGHLIGHTS -->
+  <section class="section section--warm">
+    <div class="section-header reveal">
+      <p class="section-label">Selection</p>
+      <h2 class="section-title">Press, recognition<br>and milestones</h2>
+    </div>
+    <div class="project-grid container reveal">
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/370503_a5e62e0abe954ebf9f48802bc462ed93~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-design.jpg"
+             alt="Ross design philosophy" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">A distinct design philosophy</p>
+          <p class="project-type">Press · Architecture</p>
         </div>
-        <div class="content-split-body">
-          <p>Ross has spent years building a position where architecture, lifestyle and recognisability meet. This first selection focuses on the material that most clearly strengthens the brand, instead of trying to present a complete archive all at once.</p>
-          <p>The result is a more editorial and credible press surface, where coverage, awards and notable projects reinforce the wider picture of Ross as a premium design house.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/370503_28414294b00043358f98e672357db835~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-awards.jpg"
+             alt="Award-winning projects" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">Award-winning projects</p>
+          <p class="project-type">Award · Quality</p>
         </div>
       </div>
-    </section>
-
-    <section class="section section--warm press-listing">
-      <div class="section-header">
-        <p class="eyebrow">Selection</p>
-        <h2>Press, recognition and milestones</h2>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/d6d69b_93bde8e0e41c4a09a5eb86db5f4d37c3~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-timeline.jpg"
+             alt="Consistent form language" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">Years of consistent form language</p>
+          <p class="project-type">Milestone · Brand</p>
+        </div>
       </div>
-      <div class="press-grid">
-        <article class="press-card">
-          <span class="press-meta">Press · Architecture</span>
-          <h3>Ross highlighted for its distinct design philosophy</h3>
-          <p>A recurring theme in Ross-related features is the emphasis on individuality, spatial character and homes that feel deeply personal rather than standardised.</p>
-        </article>
-        <article class="press-card">
-          <span class="press-meta">Award · Quality</span>
-          <h3>Award-winning projects strengthen the premium position</h3>
-          <p>Ross carries a history of projects created not only to function well, but to be remembered. That forms an important proof layer for future clients.</p>
-        </article>
-        <article class="press-card">
-          <span class="press-meta">Milestone · Brand</span>
-          <h3>Years of consistent form language create authority</h3>
-          <p>The long timeline is an asset in itself. Ross feels established, calm and assured rather than new or trend-driven.</p>
-        </article>
-        <article class="press-card">
-          <span class="press-meta">Editorial · Lifestyle</span>
-          <h3>The homes are presented as a way of life, not just buildings</h3>
-          <p>What often distinguishes Ross in editorial contexts is not architecture alone, but how it connects to the way people want to live, feel and belong.</p>
-        </article>
-        <article class="press-card">
-          <span class="press-meta">International · Position</span>
-          <h3>International relevance without losing identity</h3>
-          <p>Ross can carry an international expression without becoming generic. That is a central strength to build on in future features and project presentations.</p>
-        </article>
-        <article class="press-card">
-          <span class="press-meta">Forward · Platform</span>
-          <h3>A foundation for a fuller media archive over time</h3>
-          <p>This page is intentionally lean. A future phase can grow into a broader archive with external links, dates, categories and deeper editorial entries once the right material has been curated.</p>
-        </article>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/370503_9dbdd0907e1b404f917e6f2bc5ed424f~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-lifestyle.jpg"
+             alt="Homes as a way of life" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">Homes as a way of life</p>
+          <p class="project-type">Editorial · Lifestyle</p>
+        </div>
       </div>
-    </section>
-
-    <section class="section section--light press-note">
-      <div class="section-header section-header--left">
-        <p class="eyebrow">Next</p>
-        <h2>Designed to grow over time</h2>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/370503_2082a2f21c0e4e0aa7b6e1f2a13b22e3~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-international.jpg"
+             alt="International relevance" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">International relevance</p>
+          <p class="project-type">International · Position</p>
+        </div>
       </div>
-      <p class="press-note-copy">This is a deliberately curated first version of Ross’s news and press surface. It gives the brand immediate credibility while staying easy to expand with more coverage, external links, dates, categories and future editorial material.</p>
-    </section>
-  </main>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/d6d69b_22ab80e7e7494038abdb85ce96ec3e5c~mv2.jpg/v1/fill/w_800,h_600,al_c,q_90,enc_avif,quality_auto/press-future.jpg"
+             alt="A foundation for growth" loading="lazy">
+        <div class="project-overlay">
+          <p class="project-name">A foundation for growth</p>
+          <p class="project-type">Forward · Platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- PHILOSOPHY / EDITORIAL NOTE -->
+  <section class="philosophy-block section--cream reveal">
+    <div>
+      <p class="section-label">Editorial</p>
+      <h2 class="philosophy-title">What sets Ross apart in the media<br>is not architecture alone — but how it connects<br>to the way people want to live</h2>
+      <p class="philosophy-body">
+        The long timeline is an asset in itself. Ross feels established, calm and assured rather than new or trend-driven. The homes are presented as life choices, not just buildings.
+      </p>
+    </div>
+  </section>
+
+  <!-- AWARDS BAR -->
+  <section class="awards-bar reveal">
+    <div class="awards-inner">
+      <div class="award"><p class="award-name">International Property Award</p><p class="award-year">Best Single Residence, Sweden</p></div>
+      <div class="award"><p class="award-name">Sveriges Vackraste Villa</p><p class="award-year">2009</p></div>
+      <div class="award"><p class="award-name">Byggnadsvårdspriset</p><p class="award-year">Cultural Heritage</p></div>
+      <div class="award"><p class="award-name">ADC Gold & Silver</p><p class="award-year">2023</p></div>
+      <div class="award"><p class="award-name">Årets Haningebyggnad</p><p class="award-year">Architecture Prize</p></div>
+    </div>
+  </section>
+
+  <!-- FORWARD-LOOKING NOTE -->
+  <section class="content-split reversed">
+    <div class="content-split-image reveal">
+      <img src="https://static.wixstatic.com/media/370503_38d6d5c0af314fd69e8d83ce8e00c21c~mv2.jpg/v1/fill/w_1200,h_1600,al_c,q_90,enc_avif,quality_auto/ross-future.jpg"
+           alt="The future of Ross" loading="lazy">
+    </div>
+    <div class="content-split-body reveal reveal-delay-1">
+      <p class="section-label">Next</p>
+      <h2 class="content-split-title">Designed to grow<br>over time</h2>
+      <p class="content-split-text">
+        This is a deliberately curated first version of Ross's news and press surface. It gives the brand immediate credibility while staying easy to expand with more coverage, external links, dates and categories.
+      </p>
+      <p class="content-split-text">
+        Ross can carry an international expression without becoming generic. That is a central strength to build on in future features and project presentations.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="cta-content reveal">
+      <h2 class="cta-title">Welcome to live<br>in a work of art</h2>
+      <a href="/en/contact.html" class="cta-btn">Book an inspiration meeting</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <a href="/en/" class="footer-logo">ROSS</a>
-        <p class="footer-tagline">Live in a Work of Art ®</p>
+        <p class="footer-logo">ROSS</p>
+        <p class="footer-tagline">Live in a Work of Art &reg;</p>
       </div>
+      <nav class="footer-nav">
+        <a href="/en/exclusive-design.html">Exclusive Design</a>
+        <a href="/en/redesign.html">Re-Design</a>
+        <a href="/en/limited-edition.html">Limited Edition</a>
+        <a href="/en/about.html">About Ross</a>
+        <a href="/en/press.html">News</a>
+        <a href="/en/contact.html">Contact</a>
+      </nav>
       <div class="footer-contact">
-        <a href="tel:+468848482">+46 8 84 84 82</a>
-        <a href="mailto:info@ross.se">info@ross.se</a>
+        <p class="footer-phone"><a href="tel:+468848482">+46 8 84 84 82</a></p>
+        <p class="footer-email"><a href="mailto:info@ross.se">info@ross.se</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Ross Arkitektur & Design AB — All Rights Reserved</p>
+      <div class="footer-social">
+        <a href="http://www.facebook.com/rossarkitekturdesignab" target="_blank" rel="noopener">Facebook</a>
+        <a href="http://www.instagram.com/Designbyross" target="_blank" rel="noopener">Instagram</a>
+        <a href="http://www.youtube.com/channel/UC1A_oiTWfjZ6GjA-TRNibWQ" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.pinterest.com/rossarkitektur/" target="_blank" rel="noopener">Pinterest</a>
       </div>
     </div>
   </footer>
 
   <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.querySelector('.nav-links');
-    toggle?.addEventListener('click', () => links?.classList.toggle('open'));
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 80));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
