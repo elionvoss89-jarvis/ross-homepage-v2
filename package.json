@@ -1,7 +1,7 @@
 {
-  "name": "ross-homepage-v2-static",
+  "name": "ross-homepage-v2",
   "private": true,
   "scripts": {
-    "start": "npx serve . -l tcp://0.0.0.0:${PORT:-4321}"
+    "start": "npx serve . --listen tcp://0.0.0.0:${PORT:-3000} --no-clipboard"
   }
 }
