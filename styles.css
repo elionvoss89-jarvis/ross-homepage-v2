@@ -797,7 +797,14 @@ a { text-decoration: none; color: inherit; }
    6-link nav from cramping/wrapping on all iPad portrait sizes */
 @media (max-width: 960px) {
   .nav-links { display: none; }
-  .nav-lang { display: none; }
+  .nav-lang {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.75rem;
+    padding-left: 0;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+  }
   .nav-toggle { display: flex; }
   .nav-links.open {
     display: flex;
@@ -808,7 +815,7 @@ a { text-decoration: none; color: inherit; }
     justify-content: center;
     align-items: center;
     gap: 1.75rem;
-    padding: 5rem 1.5rem;
+    padding: 6.5rem 1.5rem 5rem;
     z-index: 999;
     overflow-y: auto;
   }
@@ -819,8 +826,10 @@ a { text-decoration: none; color: inherit; }
   }
   /* Keep hamburger visible over the dark full-screen menu (overrides .scrolled) */
   .nav-links.open ~ .nav-toggle span { background: var(--white); }
-  /* Keep logo visible over the dark full-screen menu */
-  .nav:has(.nav-links.open) .nav-logo { color: var(--white); }
+  /* Keep logo + language switch visible over the dark full-screen menu */
+  .nav:has(.nav-links.open) .nav-logo,
+  .nav:has(.nav-links.open) .nav-lang,
+  .nav:has(.nav-links.open) .nav-lang .active { color: var(--white); border-color: rgba(255,255,255,0.28); }
   /* Hamburger → X */
   .nav-links.open ~ .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .nav-links.open ~ .nav-toggle span:nth-child(2) { opacity: 0; }
@@ -832,6 +841,11 @@ a { text-decoration: none; color: inherit; }
   .nav { padding: 0.9rem 1.25rem; }
   .nav.scrolled { padding: 0.75rem 1.25rem; }
   .nav-logo { font-size: 1.35rem; }
+  .nav-lang {
+    margin-right: 0.5rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
   .section { padding: 5rem 1.5rem; }
   .section--lg { padding: 6rem 1.5rem; }
   .section-header { margin-bottom: 3.5rem; }
